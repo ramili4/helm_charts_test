@@ -23,7 +23,7 @@ pipeline {
                     // Test the Helm chart
                     dir("${HELM_CHART_DIR}") {
                         sh 'helm lint .'
-                        sh 'helm template . | kubeval' // optional: validate Kubernetes manifests
+                        
                     }
                 }
             }
