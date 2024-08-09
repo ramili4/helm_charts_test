@@ -6,7 +6,7 @@ pipeline {
         TARGET_HELM_REPO = 'git@github.com:ramili4/tested_charts.git'
         CHART_VERSION = '1.0.0'
         GIT_CREDENTIALS_ID = 'github-ssh-key' // ID of the SSH key in Jenkins
-        HELM_CHART_DIR = 'Helm_git'
+        HELM_CHART_DIR = '/var/jenkins_home/workspace/Helm_git'
     }
 
     stages {
